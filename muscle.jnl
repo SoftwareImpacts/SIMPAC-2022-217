@@ -1,0 +1,387 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(name='muscle')
+mdb.Model(name='Model-1')
+del mdb.models['Model-1']
+mdb.models['muscle'].ConstrainedSketch(name='sketch_fascicles', sheetSize=
+    3794.73319220205)
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-364.2310117, 
+    -240.7293717), (-845.3293538, 338.2017971)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-845.3293538, 
+    338.2017971), (-752.8560145, 739.4239872)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-752.8560145, 
+    739.4239872), (-24.1791353, 695.673338)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-24.1791353, 
+    695.673338), (243.3249676, 10.2484421)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((243.3249676, 
+    10.2484421), (-364.2310117, -240.7293717)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-364.2310117, 
+    -240.7293717), (-364.2310117, -240.7293717)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((495.3648883, 
+    -882.7062026), (34.5270034, -1267.9598666)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((34.5270034, 
+    -1267.9598666), (6.7407458, -1260.8608845)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((6.7407458, 
+    -1260.8608845), (-485.1585772, -557.4071498)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-485.1585772, 
+    -557.4071498), (-346.4832301, -283.6924156)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-346.4832301, 
+    -283.6924156), (261.0727492, -32.7146017)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((261.0727492, 
+    -32.7146017), (400.2834471, -79.2393668)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((400.2834471, 
+    -79.2393668), (495.3648883, -882.7062026)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((495.3648883, 
+    -882.7062026), (495.3648883, -882.7062026)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((969.2124992, 
+    937.3798919), (754.6156379, 86.5473952)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((754.6156379, 
+    86.5473952), (419.4576525, -21.8665998)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((419.4576525, 
+    -21.8665998), (280.2469546, 24.6581653)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((280.2469546, 
+    24.6581653), (12.7428517, 710.0830612)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((12.7428517, 
+    710.0830612), (220.3916353, 1064.160143)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((220.3916353, 
+    1064.160143), (879.5859088, 1086.7101515)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((879.5859088, 
+    1086.7101515), (969.2124992, 937.3798919)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((969.2124992, 
+    937.3798919), (969.2124992, 937.3798919)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-920.3452322, 
+    -682.590139), (-1493.3395658, -258.4851891)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1493.3395658, -258.4851891), (-1426.6704193, 17.8656791)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1426.6704193, 17.8656791), (-870.725529, 317.0972885)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-870.725529, 
+    317.0972885), (-389.6271869, -261.8338802)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-389.6271869, 
+    -261.8338802), (-528.302534, -535.5486145)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-528.302534, 
+    -535.5486145), (-920.3452322, -682.590139)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-920.3452322, 
+    -682.590139), (-920.3452322, -682.590139)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((771.7829557, 
+    33.4752468), (1189.0822333, -114.5907195)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1189.0822333, 
+    -114.5907195), (1363.8401951, -785.2522507)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1363.8401951, 
+    -785.2522507), (951.6524875, -1016.2932561)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((951.6524875, 
+    -1016.2932561), (531.7064114, -878.405584)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((531.7064114, 
+    -878.405584), (436.6249702, -74.9387483)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((436.6249702, 
+    -74.9387483), (771.7829557, 33.4752468)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((771.7829557, 
+    33.4752468), (771.7829557, 33.4752468)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-22.0875374, 
+    730.5093703), (-750.7644166, 774.2600195)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-750.7644166, 
+    774.2600195), (-830.9525958, 914.6332543)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-830.9525958, 
+    914.6332543), (-524.5286149, 1582.6669826)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-524.5286149, 
+    1582.6669826), (22.7997983, 1416.2849819)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((22.7997983, 
+    1416.2849819), (185.5612463, 1084.5864521)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((185.5612463, 
+    1084.5864521), (-22.0875374, 730.5093703)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-22.0875374, 
+    730.5093703), (-22.0875374, 730.5093703)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-904.8860064, 
+    -723.8075884), (-512.8433082, -576.7660639)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-512.8433082, 
+    -576.7660639), (-20.9439852, -1280.2197986)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-20.9439852, 
+    -1280.2197986), (-709.1127403, -1612.9069244)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-709.1127403, 
+    -1612.9069244), (-1005.2006215, -1015.6582346)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1005.2006215, -1015.6582346), (-904.8860064, -723.8075884)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-904.8860064, 
+    -723.8075884), (-904.8860064, -723.8075884)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2373.3426876, 
+    586.3489621), (2373.3426876, 509.2719877)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2373.3426876, 
+    509.2719877), (1204.9563132, -69.852268)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1204.9563132, 
+    -69.852268), (787.6570355, 78.2136982)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((787.6570355, 
+    78.2136982), (1002.2538968, 929.0461949)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1002.2538968, 
+    929.0461949), (2373.3426876, 586.3489621)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2373.3426876, 
+    586.3489621), (2373.3426876, 586.3489621)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2375.7386137, 1337.408655), (-2375.7386137, 1375.892078)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2375.7386137, 1375.892078), (-875.0050203, 889.4683166)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-875.0050203, 
+    889.4683166), (-794.816841, 749.0950818)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-794.816841, 
+    749.0950818), (-887.2901803, 347.8728917)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-887.2901803, 
+    347.8728917), (-1443.2350706, 48.6412822)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1443.2350706, 48.6412822), (-2375.7386137, 1337.408655)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2375.7386137, 1337.408655), (-2375.7386137, 1337.408655)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1065.3114794, 
+    -2377.6174007), (633.3083287, -2377.6174007)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((633.3083287, 
+    -2377.6174007), (59.6061946, -1297.9594292)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((59.6061946, 
+    -1297.9594292), (520.4440794, -912.7057652)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((520.4440794, 
+    -912.7057652), (940.3901555, -1050.5934373)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((940.3901555, 
+    -1050.5934373), (1065.3114794, -2377.6174007)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1065.3114794, 
+    -2377.6174007), (1065.3114794, -2377.6174007)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((219.1294155, 
+    1101.058047), (56.3679676, 1432.7565769)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((56.3679676, 
+    1432.7565769), (628.0864948, 2383.8099232)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((628.0864948, 
+    2383.8099232), (1236.2680327, 2383.8099232)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1236.2680327, 
+    2383.8099232), (878.323689, 1123.6080555)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((878.323689, 
+    1123.6080555), (219.1294155, 1101.058047)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((219.1294155, 
+    1101.058047), (219.1294155, 1101.058047)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-1514.524431, 
+    -287.1073679), (-941.5300974, -711.2123177)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-941.5300974, 
+    -711.2123177), (-1041.8447124, -1003.062964)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1041.8447124, -1003.062964), (-2380.3588276, -1561.2508179)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2380.3588276, -1561.2508179), (-2380.3588276, -796.6364722)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2380.3588276, -796.6364722), (-1514.524431, -287.1073679)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-1514.524431, 
+    -287.1073679), (-1514.524431, -287.1073679)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1397.5371948, 
+    -776.4716383), (1222.7792331, -105.810107)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1222.7792331, 
+    -105.810107), (2391.1656075, 473.3141487)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2391.1656075, 
+    473.3141487), (2391.1656075, -1170.4072502)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2391.1656075, 
+    -1170.4072502), (1397.5371948, -776.4716383)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1397.5371948, 
+    -776.4716383), (1397.5371948, -776.4716383)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-555.7784376, 
+    1597.0011317), (-862.2024186, 928.9674034)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-862.2024186, 
+    928.9674034), (-2362.9360121, 1415.3911648)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2362.9360121, 1415.3911648), (-2362.9360121, 2381.6724774)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2362.9360121, 2381.6724774), (-877.0936834, 2381.6724774)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-877.0936834, 
+    2381.6724774), (-555.7784376, 1597.0011317)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-555.7784376, 
+    1597.0011317), (-555.7784376, 1597.0011317)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-694.23595, 
+    -1643.6798082), (-6.0671949, -1310.9926824)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-6.0671949, 
+    -1310.9926824), (21.7190627, -1318.0916646)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((21.7190627, 
+    -1318.0916646), (595.4211968, -2397.7496361)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((595.4211968, 
+    -2397.7496361), (-1023.9024278, -2397.7496361)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1023.9024278, -2397.7496361), (-694.23595, -1643.6798082)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-694.23595, 
+    -1643.6798082), (-694.23595, -1643.6798082)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1010.5360019, 
+    962.1818621), (920.9094115, 1111.5121217)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((920.9094115, 
+    1111.5121217), (1278.8537551, 2371.7139893)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1278.8537551, 
+    2371.7139893), (2381.6247927, 2371.7139893)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2381.6247927, 
+    2371.7139893), (2381.6247927, 619.4846293)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2381.6247927, 
+    619.4846293), (1010.5360019, 962.1818621)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1010.5360019, 
+    962.1818621), (1010.5360019, 962.1818621)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1470.9912052, 28.5579884), (-1537.6603517, -247.7928798)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1537.6603517, -247.7928798), (-2403.4947483, -757.3219841)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2403.4947483, -757.3219841), (-2403.4947483, 1317.3253612)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2403.4947483, 1317.3253612), (-1470.9912052, 28.5579884)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1470.9912052, 28.5579884), (-1470.9912052, 28.5579884)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((969.3504438, 
+    -1047.8672186), (1381.5381514, -816.8262132)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1381.5381514, 
+    -816.8262132), (2375.166564, -1210.7618251)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2375.166564, 
+    -1210.7618251), (2375.166564, -2374.891182)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((2375.166564, 
+    -2374.891182), (1094.2717677, -2374.891182)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((1094.2717677, 
+    -2374.891182), (969.3504438, -1047.8672186)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((969.3504438, 
+    -1047.8672186), (969.3504438, -1047.8672186)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((32.2198382, 
+    1447.2730423), (-515.108575, 1613.6550429)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-515.108575, 
+    1613.6550429), (-836.4238208, 2398.3263886)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-836.4238208, 
+    2398.3263886), (603.9383654, 2398.3263886)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((603.9383654, 
+    2398.3263886), (32.2198382, 1447.2730423)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((32.2198382, 
+    1447.2730423), (32.2198382, 1447.2730423)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1031.2141995, -1028.5545462), (-735.1263183, -1625.803236)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((-735.1263183, 
+    -1625.803236), (-1064.7927962, -2379.8730639)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1064.7927962, -2379.8730639), (-2369.7283147, -2379.8730639)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2369.7283147, -2379.8730639), (-2369.7283147, -1586.7424001)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -2369.7283147, -1586.7424001), (-1031.2141995, -1028.5545462)))
+mdb.models['muscle'].sketches['sketch_fascicles'].Spline(points=((
+    -1031.2141995, -1028.5545462), (-1031.2141995, -1028.5545462)))
+mdb.models['muscle'].Part(dimensionality=THREE_D, name='fascicles', type=
+    DEFORMABLE_BODY)
+mdb.models['muscle'].parts['fascicles'].BaseSolidExtrude(depth=4000.0, sketch=
+    mdb.models['muscle'].sketches['sketch_fascicles'])
+mdb.models['muscle'].rootAssembly.Instance(dependent=ON, name='fascicles', 
+    part=mdb.models['muscle'].parts['fascicles'])
+mdb.models['muscle'].ConstrainedSketch(name='sketch_perimysium', sheetSize=
+    2846.04989415154)
+mdb.models['muscle'].sketches['sketch_perimysium'].CircleByCenterPerimeter(
+    center=(0, 0), point1=(3794.73319220205, 0))
+mdb.models['muscle'].sketches['sketch_perimysium'].retrieveSketch(sketch=
+    mdb.models['muscle'].sketches['sketch_fascicles'])
+mdb.models['muscle'].Part(dimensionality=THREE_D, name='perimysium', type=
+    DEFORMABLE_BODY)
+mdb.models['muscle'].parts['perimysium'].BaseSolidExtrude(depth=4000.0, sketch=
+    mdb.models['muscle'].sketches['sketch_perimysium'])
+mdb.models['muscle'].rootAssembly.Instance(dependent=ON, name='perimysium', 
+    part=mdb.models['muscle'].parts['perimysium'])
+mdb.models['muscle'].parts['fascicles'].DatumPlaneByPrincipalPlane(offset=
+    4000.0, principalPlane=XYPLANE)
+mdb.models['muscle'].parts['fascicles'].DatumPointByCoordinate(coords=(0, 0, 
+    4000.0))
+mdb.models['muscle'].parts['fascicles'].DatumPointByCoordinate(coords=(1, 1, 
+    4000.0))
+mdb.models['muscle'].parts['fascicles'].DatumAxisByTwoPoint(point1=
+    mdb.models['muscle'].parts['fascicles'].datums[3], point2=
+    mdb.models['muscle'].parts['fascicles'].datums[4])
+mdb.models['muscle'].ConstrainedSketch(gridSpacing=37.9473319220205, name=
+    '__profile__', sheetSize=3794.73319220205, transform=
+    mdb.models['muscle'].parts['fascicles'].MakeSketchTransform(
+    sketchPlane=mdb.models['muscle'].parts['fascicles'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['muscle'].parts['fascicles'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 4000.0)))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(1863.35501458336, 0.0))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(3794.73319220205, 0.0))
+mdb.models['muscle'].parts['fascicles'].CutExtrude(flipExtrudeDirection=OFF, 
+    sketch=mdb.models['muscle'].sketches['__profile__'], sketchOrientation=
+    RIGHT, sketchPlane=mdb.models['muscle'].parts['fascicles'].datums[2], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['muscle'].parts['fascicles'].datums[5])
+mdb.models['muscle'].parts['perimysium'].DatumPlaneByPrincipalPlane(offset=
+    4000.0, principalPlane=XYPLANE)
+mdb.models['muscle'].parts['perimysium'].DatumPointByCoordinate(coords=(0, 0, 
+    4000.0))
+mdb.models['muscle'].parts['perimysium'].DatumPointByCoordinate(coords=(1, 1, 
+    4000.0))
+mdb.models['muscle'].parts['perimysium'].DatumAxisByTwoPoint(point1=
+    mdb.models['muscle'].parts['perimysium'].datums[3], point2=
+    mdb.models['muscle'].parts['perimysium'].datums[4])
+mdb.models['muscle'].ConstrainedSketch(gridSpacing=37.9473319220205, name=
+    '__profile__', sheetSize=3794.73319220205, transform=
+    mdb.models['muscle'].parts['perimysium'].MakeSketchTransform(
+    sketchPlane=mdb.models['muscle'].parts['perimysium'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['muscle'].parts['perimysium'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 4000.0)))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(1863.35501458336, 0.0))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(3794.73319220205, 0.0))
+mdb.models['muscle'].parts['perimysium'].CutExtrude(flipExtrudeDirection=OFF, 
+    sketch=mdb.models['muscle'].sketches['__profile__'], sketchOrientation=
+    RIGHT, sketchPlane=mdb.models['muscle'].parts['perimysium'].datums[2], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['muscle'].parts['perimysium'].datums[5])
+mdb.models['muscle'].ConstrainedSketch(gridSpacing=37.9473319220205, name=
+    '__profile__', sheetSize=3794.73319220205, transform=
+    mdb.models['muscle'].parts['perimysium'].MakeSketchTransform(
+    sketchPlane=mdb.models['muscle'].parts['perimysium'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['muscle'].parts['perimysium'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 4000.0)))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(1863.35501458336, 0.0))
+mdb.models['muscle'].sketches['__profile__'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(1897.36659610103, 0.0))
+mdb.models['muscle'].parts['perimysium'].SolidExtrude(depth=4000.0, 
+    flipExtrudeDirection=ON, sketch=
+    mdb.models['muscle'].sketches['__profile__'], sketchOrientation=RIGHT, 
+    sketchPlane=mdb.models['muscle'].parts['perimysium'].datums[2], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['muscle'].parts['perimysium'].datums[5])
+mdb.models['muscle'].ConstrainedSketch(name='sketch_epimysium', sheetSize=
+    3794.73319220205)
+mdb.models['muscle'].sketches['sketch_epimysium'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(1897.36659610103, 0.0))
+mdb.models['muscle'].sketches['sketch_epimysium'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(1949.35886896179, 0.0))
+mdb.models['muscle'].Part(dimensionality=THREE_D, name='epimysium', type=
+    DEFORMABLE_BODY)
+mdb.models['muscle'].parts['epimysium'].BaseSolidExtrude(depth=4000.0, sketch=
+    mdb.models['muscle'].sketches['sketch_epimysium'])
+mdb.models['muscle'].rootAssembly.Instance(dependent=ON, name='epimysium', 
+    part=mdb.models['muscle'].parts['epimysium'])
+mdb.models['muscle'].ConstrainedSketch(name='sketch_fascia', sheetSize=
+    3794.73319220205)
+mdb.models['muscle'].sketches['sketch_fascia'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(1949.35886896179, 0.0))
+mdb.models['muscle'].sketches['sketch_fascia'].CircleByCenterPerimeter(center=(
+    0.0, 0.0), point1=(2000.0, 0.0))
+mdb.models['muscle'].Part(dimensionality=THREE_D, name='fascia', type=
+    DEFORMABLE_BODY)
+mdb.models['muscle'].parts['fascia'].BaseSolidExtrude(depth=4000.0, sketch=
+    mdb.models['muscle'].sketches['sketch_fascia'])
+mdb.models['muscle'].rootAssembly.Instance(dependent=ON, name='fascia', part=
+    mdb.models['muscle'].parts['fascia'])
+mdb.models['muscle'].rootAssembly.InstanceFromBooleanMerge(domain=GEOMETRY, 
+    instances=[mdb.models['muscle'].rootAssembly.instances['fascicles'], 
+    mdb.models['muscle'].rootAssembly.instances['perimysium'], 
+    mdb.models['muscle'].rootAssembly.instances['epimysium'], 
+    mdb.models['muscle'].rootAssembly.instances['fascia']], keepIntersections=
+    ON, name='muscle', originalInstances=SUPPRESS)
+mdb.models['muscle'].rootAssembly.features.changeKey(fromName='muscle-1', 
+    toName='muscle')
+# Save by jensl on 2022_08_03-14.31.45; build 6.14-1 2014_06_05-00.11.02 134264

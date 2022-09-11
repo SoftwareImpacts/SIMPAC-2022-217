@@ -1,0 +1,1485 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.Model(name='musclefiber')
+mdb.Model(name='Model-1')
+del mdb.models['Model-1']
+mdb.models['musclefiber'].ConstrainedSketch(name='sketch_myofibrils', 
+    sheetSize=58.4807660688538)
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.4286471, 0.1195711), (-2.2933117, -1.4179483)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.2933117, -1.4179483), (-5.2405762, 2.1286516)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.2405762, 2.1286516), (-4.6740737, 4.5865855)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.6740737, 4.5865855), (-0.2101142, 4.3185639)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2101142, 4.3185639), (1.4286471, 0.1195711)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.4286471, 0.1195711), (1.4286471, 0.1195711)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.0516888, -7.8426174), (-2.9617438, -3.5331777)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.9617438, -3.5331777), (-2.1122025, -1.8563694)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.1122025, -1.8563694), (1.6097563, -0.31885)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.6097563, -0.31885), (2.4625773, -0.6038661)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.4625773, -0.6038661), (3.0450573, -5.5259977)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.0450573, -5.5259977), (0.2219106, -7.8861066)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.2219106, -7.8861066), (0.0516888, -7.8426174)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.0516888, -7.8426174), (0.0516888, -7.8426174)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.7114595, 0.6457573), (2.6582425, -0.0183995)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.6582425, -0.0183995), (1.8054216, 0.2666167)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.8054216, 0.2666167), (0.1666602, 4.4656095)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.1666602, 4.4656095), (1.4387409, 6.634727)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.4387409, 6.634727), (5.4770419, 6.772871)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.4770419, 6.772871), (6.0261049, 5.8580564)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.0261049, 5.8580564), (4.7114595, 0.6457573)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.7114595, 0.6457573), (4.7114595, 0.6457573)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.8037103, -4.2109135), (-9.3139404, -1.6127971)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.3139404, -1.6127971), (-8.9055175, 0.0801606)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.9055175, 0.0801606), (-5.4997342, 1.9132883)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.4997342, 1.9132883), (-2.5524697, -1.6333116)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.5524697, -1.6333116), (-3.402011, -3.3101199)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.402011, -3.3101199), (-5.8037103, -4.2109135)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.8037103, -4.2109135), (-5.8037103, -4.2109135)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.8334283, -0.55998), (4.8866452, 0.1041768)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.8866452, 0.1041768), (7.4430693, -0.8028926)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.4430693, -0.8028926), (8.6249143, -5.3384114)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.6249143, -5.3384114), (6.6804592, -6.5540142)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.6804592, -6.5540142), (3.4159083, -5.4821116)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.4159083, -5.4821116), (2.8334283, -0.55998)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.8334283, -0.55998), (2.8334283, -0.55998)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.0549151, 10.356361), (-0.3506278, 9.7654536)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.3506278, 9.7654536), (1.0833104, 6.8431695)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.0833104, 6.8431695), (-0.1887703, 4.674052)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.1887703, 4.674052), (-4.6527298, 4.9420736)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.6527298, 4.9420736), (-5.1439719, 5.8020164)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.1439719, 5.8020164), (-3.0549151, 10.356361)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.0549151, 10.356361), (-3.0549151, 10.356361)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2308231, -8.0401675), (-4.9235281, -10.3088008)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.9235281, -10.3088008), (-6.6813617, -7.6438853)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.6813617, -7.6438853), (-5.645955, -4.6315214)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.645955, -4.6315214), (-3.2442557, -3.7307279)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.2442557, -3.7307279), (-0.2308231, -8.0401675)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2308231, -8.0401675), (-0.2308231, -8.0401675)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.605058, -0.3463542), (5.048634, 0.5607152)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.048634, 0.5607152), (6.3632794, 5.7730143)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.3632794, 5.7730143), (11.1221258, 4.5835629)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.1221258, 4.5835629), (10.4515191, 1.0645273)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.4515191, 1.0645273), (7.605058, -0.3463542)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.605058, -0.3463542), (7.605058, -0.3463542)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.1022676, 4.6852752), (-5.66877, 2.2273413)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.66877, 2.2273413), (-9.0745533, 0.3942136)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.0745533, 0.3942136), (-11.8754011, 4.2651278)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.8754011, 4.2651278), (-8.6439098, 6.5339259)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.6439098, 6.5339259), (-5.5935097, 5.545218)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.5935097, 5.545218), (-5.1022676, 4.6852752)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.1022676, 4.6852752), (-5.1022676, 4.6852752)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.0190071, -11.6168027), (1.9551817, -10.9724815)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.9551817, -10.9724815), (0.477834, -8.1922404)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.477834, -8.1922404), (3.3009806, -5.8321315)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.3009806, -5.8321315), (6.5655315, -6.9040342)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.5655315, -6.9040342), (6.2162397, -11.4356257)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.2162397, -11.4356257), (6.0190071, -11.6168027)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.0190071, -11.6168027), (6.0190071, -11.6168027)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.0080777, 9.9335398), (3.0419571, 12.9946356)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.0419571, 12.9946356), (3.6313351, 13.003065)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.6313351, 13.003065), (6.1690161, 9.6309564)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.1690161, 9.6309564), (5.4641615, 7.1493997)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.4641615, 7.1493997), (1.4258605, 7.0112557)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.4258605, 7.0112557), (-0.0080777, 9.9335398)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.0080777, 9.9335398), (-0.0080777, 9.9335398)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.5301237, -1.9048752), (-6.0198936, -4.5029916)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.0198936, -4.5029916), (-7.0553003, -7.5153555)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0553003, -7.5153555), (-11.1951478, -7.8370389)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.1951478, -7.8370389), (-11.860244, -7.2600556)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.860244, -7.2600556), (-11.3319842, -2.9652401)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.3319842, -2.9652401), (-9.5301237, -1.9048752)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.5301237, -1.9048752), (-9.5301237, -1.9048752)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.968779, -5.2488086), (7.786934, -0.7132899)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.786934, -0.7132899), (10.6333951, 0.6975916)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.6333951, 0.6975916), (13.8732792, -1.6884803)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    13.8732792, -1.6884803), (14.0186755, -2.8256245)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.0186755, -2.8256245), (10.5744592, -5.6209327)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.5744592, -5.6209327), (8.968779, -5.2488086)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.968779, -5.2488086), (8.968779, -5.2488086)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5132642, 6.9369986), (-9.3749193, 10.766959)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.3749193, 10.766959), (-8.5869372, 11.9137307)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5869372, 11.9137307), (-4.0564356, 11.5321662)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.0564356, 11.5321662), (-3.3738073, 10.5026354)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.3738073, 10.5026354), (-5.4628642, 5.9482908)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.4628642, 5.9482908), (-8.5132642, 6.9369986)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5132642, 6.9369986), (-8.5132642, 6.9369986)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.9144144, -11.452455), (-4.7717163, -10.6228261)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.7717163, -10.6228261), (-0.0790112, -8.3541928)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.0790112, -8.3541928), (0.0912106, -8.397682)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.0912106, -8.397682), (1.5685583, -11.177923)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.5685583, -11.177923), (-0.2629688, -14.566184)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2629688, -14.566184), (-1.8356398, -14.9500461)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.8356398, -14.9500461), (-4.9144144, -11.452455)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.9144144, -11.452455), (-4.9144144, -11.452455)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.447795, 6.1111508), (5.8987321, 7.0259654)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.8987321, 7.0259654), (6.6035868, 9.5075221)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.6035868, 9.5075221), (10.1615321, 10.8324321)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.1615321, 10.8324321), (11.7773537, 9.9703651)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.7773537, 9.9703651), (11.5750356, 5.1994969)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.5750356, 5.1994969), (11.2066415, 4.9216994)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.2066415, 4.9216994), (6.447795, 6.1111508)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.447795, 6.1111508), (6.447795, 6.1111508)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.7776568, 0.6809981), (-12.2477706, 4.0697584)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.2477706, 4.0697584), (-12.1586416, 4.0601857)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1586416, 4.0601857), (-9.3577938, 0.1892714)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.3577938, 0.1892714), (-9.7662167, -1.5036862)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.7662167, -1.5036862), (-11.5680773, -2.5640511)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.5680773, -2.5640511), (-15.0791206, -1.226392)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.0791206, -1.226392), (-15.7776568, 0.6809981)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.7776568, 0.6809981), (-15.7776568, 0.6809981)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.204821, -9.3884706), (11.3839246, -11.4514019)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.3839246, -11.4514019), (6.5668837, -11.4626531)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.5668837, -11.4626531), (6.9161756, -6.9310616)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.9161756, -6.9310616), (8.8606306, -5.7154587)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.8606306, -5.7154587), (10.4663108, -6.0875827)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.4663108, -6.0875827), (12.204821, -9.3884706)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.204821, -9.3884706), (12.204821, -9.3884706)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.6461368, 11.804214), (-2.7679191, 15.4139499)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.7679191, 15.4139499), (-0.619853, 16.4840247)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.619853, 16.4840247), (2.7908136, 13.2448715)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.7908136, 13.2448715), (-0.2592212, 10.1837758)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2592212, 10.1837758), (-2.9635085, 10.7746832)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.9635085, 10.7746832), (-3.6461368, 11.804214)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.6461368, 11.804214), (-3.6461368, 11.804214)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.4574946, -13.4835786), (-10.9370765, -12.8030379)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.9370765, -12.8030379), (-11.1674155, -8.1939336)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.1674155, -8.1939336), (-7.0275681, -7.8722502)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0275681, -7.8722502), (-5.2697345, -10.5371658)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.2697345, -10.5371658), (-5.4124327, -11.3667946)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.4124327, -11.3667946), (-8.4574946, -13.4835786)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.4574946, -13.4835786), (-8.4574946, -13.4835786)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.5185956, 4.5080094), (11.8869897, 4.7858069)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.8869897, 4.7858069), (15.5709418, 4.3477626)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.5709418, 4.3477626), (17.0535488, 2.0487482)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.0535488, 2.0487482), (14.087873, -1.397098)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.087873, -1.397098), (10.8479889, 0.9889738)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.8479889, 0.9889738), (11.5185956, 4.5080094)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.5185956, 4.5080094), (11.5185956, 4.5080094)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1019707, 4.5878352), (-12.1910998, 4.5974079)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1910998, 4.5974079), (-14.6583615, 7.3789376)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.6583615, 7.3789376), (-14.2044402, 10.2368724)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.2044402, 10.2368724), (-9.7321345, 10.6865936)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.7321345, 10.6865936), (-8.8704794, 6.8566332)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.8704794, 6.8566332), (-12.1019707, 4.5878352)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1019707, 4.5878352), (-12.1019707, 4.5878352)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.9506828, -15.5500487), (3.5873435, -17.4724509)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.5873435, -17.4724509), (0.0631332, -14.7424588)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.0631332, -14.7424588), (1.8946604, -11.3541978)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.8946604, -11.3541978), (5.9584859, -11.998519)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.9584859, -11.998519), (5.9506828, -15.5500487)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.9506828, -15.5500487), (5.9506828, -15.5500487)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.1639917, 15.7181097), (9.3547904, 15.5659288)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.3547904, 15.5659288), (10.0305043, 11.1842976)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.0305043, 11.1842976), (6.4725589, 9.8593875)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.4725589, 9.8593875), (3.9348778, 13.2314962)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.9348778, 13.2314962), (6.1639917, 15.7181097)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.1639917, 15.7181097), (6.1639917, 15.7181097)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.2145578, -1.581883), (-11.7035144, -2.9195421)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.7035144, -2.9195421), (-12.2317742, -7.2143576)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.2317742, -7.2143576), (-15.3516455, -7.5605549)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.3516455, -7.5605549), (-17.7287709, -5.2168882)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.7287709, -5.2168882), (-15.2145578, -1.581883)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.2145578, -1.581883), (-15.2145578, -1.581883)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.2516102, -3.112633), (16.6517512, -4.8248131)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.6517512, -4.8248131), (16.8662647, -8.296453)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.8662647, -8.296453), (12.545904, -9.2088291)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.545904, -9.2088291), (10.8073938, -5.9079413)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.8073938, -5.9079413), (14.2516102, -3.112633)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.2516102, -3.112633), (14.2516102, -3.112633)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5562467, 12.2781339), (-9.1607325, 14.9769764)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.1607325, 14.9769764), (-6.9181354, 17.8123927)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.9181354, 17.8123927), (-3.1475274, 15.5063054)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.1475274, 15.5063054), (-4.0257451, 11.8965694)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.0257451, 11.8965694), (-8.5562467, 12.2781339)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5562467, 12.2781339), (-8.5562467, 12.2781339)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0691582, -18.0851672), (-8.2314956, -13.8086854)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.2314956, -13.8086854), (-5.1864337, -11.6919015)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.1864337, -11.6919015), (-2.1076591, -15.1894926)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.1076591, -15.1894926), (-3.3745438, -17.4486731)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.3745438, -17.4486731), (-7.0691582, -18.0851672)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0691582, -18.0851672), (-7.0691582, -18.0851672)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.6183202, 4.7462144), (11.934368, 5.1842587)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.934368, 5.1842587), (12.1366861, 9.9551269)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.1366861, 9.9551269), (14.4284266, 10.7343322)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.4284266, 10.7343322), (17.7150829, 8.6713374)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.7150829, 8.6713374), (15.6183202, 4.7462144)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.6183202, 4.7462144), (15.6183202, 4.7462144)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.962552, 7.1091158), (-12.4952902, 4.327586)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.4952902, 4.327586), (-16.0251764, 0.9388257)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -16.0251764, 0.9388257), (-18.0990557, 1.8272786)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.0990557, 1.8272786), (-19.2033637, 5.68189)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.2033637, 5.68189), (-14.962552, 7.1091158)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.962552, 7.1091158), (-14.962552, 7.1091158)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.4562996, -17.4305356), (6.3626787, -15.5509538)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.3626787, -15.5509538), (6.3704817, -11.9994242)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.3704817, -11.9994242), (6.5677143, -11.8182472)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.5677143, -11.8182472), (11.3847552, -11.806996)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.3847552, -11.806996), (12.2644725, -13.7096871)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.2644725, -13.7096871), (10.4562996, -17.4305356)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.4562996, -17.4305356), (10.4562996, -17.4305356)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.0347052, 13.5016772), (-0.3759615, 16.7408304)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.3759615, 16.7408304), (0.1979954, 18.5941171)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.1979954, 18.5941171), (4.1452964, 20.2026734)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.1452964, 20.2026734), (5.853197, 15.9967202)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    5.853197, 15.9967202), (3.6240832, 13.5101067)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.6240832, 13.5101067), (3.0347052, 13.5016772)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.0347052, 13.5016772), (3.0347052, 13.5016772)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -16.9343972, -12.2596587), (-16.9460817, -12.2308962)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -16.9460817, -12.2308962), (-15.3050162, -7.9807704)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.3050162, -7.9807704), (-12.1851448, -7.6345731)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1851448, -7.6345731), (-11.5200486, -8.2115564)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.5200486, -8.2115564), (-11.2897096, -12.8206606)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.2897096, -12.8206606), (-12.8258455, -13.7344835)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.8258455, -13.7344835), (-16.9343972, -12.2596587)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -16.9343972, -12.2596587), (-16.9343972, -12.2596587)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.3548842, -1.6269018), (17.32056, 1.8189444)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.32056, 1.8189444), (18.9262999, 1.4975406)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    18.9262999, 1.4975406), (21.0132049, -2.373504)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.0132049, -2.373504), (20.9562875, -2.5244882)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.9562875, -2.5244882), (16.9004215, -4.476226)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.9004215, -4.476226), (14.5002805, -2.764046)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.5002805, -2.764046), (14.3548842, -1.6269018)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.3548842, -1.6269018), (14.3548842, -1.6269018)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.2396354, 10.586875), (-15.128097, 11.7834261)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.128097, 11.7834261), (-14.0860493, 16.0902479)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.0860493, 16.0902479), (-13.8297367, 16.2184967)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.8297367, 16.2184967), (-9.5838333, 14.8822104)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.5838333, 14.8822104), (-8.9793475, 12.1833679)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.9793475, 12.1833679), (-9.7673296, 11.0365962)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.7673296, 11.0365962), (-14.2396354, 10.586875)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.2396354, 10.586875), (-14.2396354, 10.586875)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.4387684, -21.6160667), (-0.8298004, -21.5026046)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.8298004, -21.5026046), (-2.9916746, -17.6633754)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.9916746, -17.6633754), (-1.7247899, -15.4041948)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.7247899, -15.4041948), (-0.1521189, -15.0203328)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.1521189, -15.0203328), (3.3720913, -17.7503249)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.3720913, -17.7503249), (3.2428919, -19.089413)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.2428919, -19.089413), (-0.4387684, -21.6160667)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.4387684, -21.6160667), (-0.4387684, -21.6160667)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.9936567, 10.3757942), (10.3778352, 11.2378613)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.3778352, 11.2378613), (9.7021213, 15.6194925)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.7021213, 15.6194925), (10.5903918, 16.4296222)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.5903918, 16.4296222), (15.0523182, 15.8435518)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.0523182, 15.8435518), (15.3223142, 15.3952323)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.3223142, 15.3952323), (14.2853973, 11.1549995)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.2853973, 11.1549995), (11.9936567, 10.3757942)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.9936567, 10.3757942), (11.9936567, 10.3757942)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.078742, -5.0210782), (-22.0286672, -1.5752774)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.0286672, -1.5752774), (-21.8997795, -0.9530302)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.8997795, -0.9530302), (-18.2761237, 1.4139558)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.2761237, 1.4139558), (-16.2022445, 0.525503)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -16.2022445, 0.525503), (-15.5037083, -1.3818871)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.5037083, -1.3818871), (-18.0179215, -5.0168924)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.0179215, -5.0168924), (-19.078742, -5.0210782)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.078742, -5.0210782), (-19.078742, -5.0210782)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.9389743, -8.6407539), (17.624108, -9.2561159)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.624108, -9.2561159), (17.5131585, -13.8273666)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.5131585, -13.8273666), (16.9079318, -14.2596796)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.9079318, -14.2596796), (12.6774346, -13.5187524)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.6774346, -13.5187524), (11.7977173, -11.6160612)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    11.7977173, -11.6160612), (12.6186137, -9.5531299)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.6186137, -9.5531299), (16.9389743, -8.6407539)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.9389743, -8.6407539), (16.9389743, -8.6407539)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.8081905, 22.1364936), (-0.2416539, 18.7302751)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2416539, 18.7302751), (-0.8156107, 16.8769883)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.8156107, 16.8769883), (-2.9636767, 15.8069136)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.9636767, 15.8069136), (-6.7342848, 18.1130008)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.7342848, 18.1130008), (-6.8147163, 18.8911307)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.8147163, 18.8911307), (-3.6499988, 22.2431426)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.6499988, 22.2431426), (-2.8081905, 22.1364936)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.8081905, 22.1364936), (-2.8081905, 22.1364936)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.5878511, -14.134552), (-11.0517151, -13.2207292)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.0517151, -13.2207292), (-8.5721333, -13.9012699)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5721333, -13.9012699), (-7.4097959, -18.1777517)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.4097959, -18.1777517), (-7.7913292, -18.6974949)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.7913292, -18.6974949), (-12.4238622, -19.0764453)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.4238622, -19.0764453), (-13.0347808, -18.348948)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.0347808, -18.348948), (-12.5878511, -14.134552)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.5878511, -14.134552), (-12.5878511, -14.134552)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.4129488, 2.280521), (15.9303419, 4.5795354)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.9303419, 4.5795354), (18.0271046, 8.5046584)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    18.0271046, 8.5046584), (18.5250399, 8.6061682)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    18.5250399, 8.6061682), (22.2533029, 5.7660333)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.2533029, 5.7660333), (22.2032843, 4.7188994)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.2032843, 4.7188994), (19.0186887, 1.9591172)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    19.0186887, 1.9591172), (17.4129488, 2.280521)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.4129488, 2.280521), (17.4129488, 2.280521)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.5157413, 10.8519548), (-19.7000878, 11.6537572)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.7000878, 11.6537572), (-15.5102058, 11.4997032)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.5102058, 11.4997032), (-14.6217442, 10.3031521)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.6217442, 10.3031521), (-15.0756654, 7.4452173)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.0756654, 7.4452173), (-19.3164772, 6.0179916)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.3164772, 6.0179916), (-19.6367552, 6.2080477)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.6367552, 6.2080477), (-20.5157413, 10.8519548)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.5157413, 10.8519548), (-20.5157413, 10.8519548)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.7217563, -19.1356153), (3.8509556, -17.7965272)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.8509556, -17.7965272), (6.214295, -15.874125)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.214295, -15.874125), (10.3079159, -17.7537068)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.3079159, -17.7537068), (10.3776937, -17.9805847)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.3776937, -17.9805847), (7.903437, -22.0547216)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.903437, -22.0547216), (6.6675673, -22.0925754)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.6675673, -22.0925754), (3.7217563, -19.1356153)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.7217563, -19.1356153), (3.7217563, -19.1356153)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.1234243, 21.8142935), (10.1246058, 20.9439882)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.1246058, 20.9439882), (10.2627493, 16.7888674)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.2627493, 16.7888674), (9.3744788, 15.9787377)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.3744788, 15.9787377), (6.18368, 16.1309186)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.18368, 16.1309186), (4.4757794, 20.3368717)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.4757794, 20.3368717), (4.5194819, 20.4300222)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.5194819, 20.4300222), (9.1234243, 21.8142935)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.1234243, 21.8142935), (9.1234243, 21.8142935)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.7987042, -8.6359616), (-19.0768034, -5.5123863)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.0768034, -5.5123863), (-18.0159828, -5.5082004)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.0159828, -5.5082004), (-15.6388574, -7.8518671)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.6388574, -7.8518671), (-17.2799229, -12.1019928)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.2799229, -12.1019928), (-21.644808, -10.0418429)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.644808, -10.0418429), (-21.7987042, -8.6359616)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.7987042, -8.6359616), (-21.7987042, -8.6359616)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.056142, -4.7998257), (21.112008, -2.8480878)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.112008, -2.8480878), (22.9564263, -7.25161)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.9564263, -7.25161), (22.0642535, -8.4570803)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.0642535, -8.4570803), (17.9557891, -8.8868276)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.9557891, -8.8868276), (17.2706555, -8.2714656)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.2706555, -8.2714656), (17.056142, -4.7998257)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.056142, -4.7998257), (17.056142, -4.7998257)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.313459, 18.8395781), (-7.2330275, 18.0614482)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.2330275, 18.0614482), (-9.4756246, 15.2260319)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -9.4756246, 15.2260319), (-13.721528, 16.5623182)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.721528, 16.5623182), (-12.1606274, 21.0228602)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.1606274, 21.0228602), (-10.6053772, 21.3179442)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.6053772, 21.3179442), (-7.313459, 18.8395781)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.313459, 18.8395781), (-7.313459, 18.8395781)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.1450951, -21.6801474), (-5.2513218, -23.9276937)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.2513218, -23.9276937), (-6.6625816, -23.0455899)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.6625816, -23.0455899), (-7.3831171, -18.9971554)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.3831171, -18.9971554), (-7.0015837, -18.4774122)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0015837, -18.4774122), (-3.3069693, -17.8409182)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.3069693, -17.8409182), (-1.1450951, -21.6801474)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.1450951, -21.6801474), (-1.1450951, -21.6801474)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.9249608, 9.0057039), (14.6383045, 11.0686987)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.6383045, 11.0686987), (15.6752215, 15.3089315)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.6752215, 15.3089315), (20.1901008, 14.2390838)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.1901008, 14.2390838), (20.6485191, 12.5568109)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.6485191, 12.5568109), (18.4228961, 9.1072137)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    18.4228961, 9.1072137), (17.9249608, 9.0057039)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.9249608, 9.0057039), (17.9249608, 9.0057039)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.5799439, 5.5740035), (-18.4756359, 1.7193921)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.4756359, 1.7193921), (-22.0992917, -0.6475939)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.0992917, -0.6475939), (-24.7150217, 3.1387342)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -24.7150217, 3.1387342), (-23.8739362, 4.7540402)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.8739362, 4.7540402), (-19.900222, 5.7640596)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.900222, 5.7640596), (-19.5799439, 5.5740035)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.5799439, 5.5740035), (-19.5799439, 5.5740035)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.8060538, -17.6005012), (12.6142267, -13.8796527)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    12.6142267, -13.8796527), (16.8447239, -14.62058)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.8447239, -14.62058), (16.2566004, -19.1496943)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.2566004, -19.1496943), (14.4711384, -19.7906056)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.4711384, -19.7906056), (10.8758316, -17.8273791)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.8758316, -17.8273791), (10.8060538, -17.6005012)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.8060538, -17.6005012), (10.8060538, -17.6005012)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.7457884, 24.5365874), (4.043266, 20.6534435)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.043266, 20.6534435), (3.9995636, 20.5602931)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.9995636, 20.5602931), (0.0522625, 18.9517369)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.0522625, 18.9517369), (-2.5142741, 22.3579554)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.5142741, 22.3579554), (0.9312653, 25.3068416)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.9312653, 25.3068416), (2.7457884, 24.5365874)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.7457884, 24.5365874), (2.7457884, 24.5365874)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9067458, -18.1928403), (-18.7463243, -16.3292926)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.7463243, -16.3292926), (-17.0640136, -12.6207428)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.0640136, -12.6207428), (-12.9554619, -14.0955675)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.9554619, -14.0955675), (-13.4023916, -18.3099635)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.4023916, -18.3099635), (-17.9067458, -18.1928403)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9067458, -18.1928403), (-17.9067458, -18.1928403)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    19.2619021, 1.678466), (22.4464977, 4.4382482)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.4464977, 4.4382482), (25.69321, 1.3525583)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.69321, 1.3525583), (25.0223104, -0.6534226)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.0223104, -0.6534226), (21.3488071, -2.1925787)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.3488071, -2.1925787), (19.2619021, 1.678466)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    19.2619021, 1.678466), (19.2619021, 1.678466)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.112442, 17.5197178), (-14.4544488, 16.1793832)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.4544488, 16.1793832), (-15.4964965, 11.8725614)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.4964965, 11.8725614), (-19.6863785, 12.0266154)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.6863785, 12.0266154), (-20.027923, 16.4682818)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.027923, 16.4682818), (-18.112442, 17.5197178)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.112442, 17.5197178), (-18.112442, 17.5197178)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.6932489, -25.865917), (1.5063428, -25.3214483)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.5063428, -25.3214483), (-0.2254848, -21.9268484)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.2254848, -21.9268484), (3.4561755, -19.4001947)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.4561755, -19.4001947), (6.4019866, -22.3571548)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.4019866, -22.3571548), (3.6932489, -25.865917)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.6932489, -25.865917), (3.6932489, -25.865917)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.8432134, 21.7426035), (16.1167137, 19.8021673)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.1167137, 19.8021673), (15.1011487, 16.2153135)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.1011487, 16.2153135), (10.6392224, 16.8013838)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.6392224, 16.8013838), (10.501079, 20.9565047)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.501079, 20.9565047), (14.8432134, 21.7426035)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.8432134, 21.7426035), (14.8432134, 21.7426035)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.6586213, -6.16975), (-25.1555916, -3.5510094)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.1555916, -3.5510094), (-22.3120937, -1.8179167)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.3120937, -1.8179167), (-19.3621685, -5.2637175)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.3621685, -5.2637175), (-22.0840693, -8.3872929)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.0840693, -8.3872929), (-25.6586213, -6.16975)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.6586213, -6.16975), (-25.6586213, -6.16975)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.2508675, -12.808209), (20.9630358, -14.4604255)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.9630358, -14.4604255), (17.8844099, -13.8363773)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.8844099, -13.8363773), (17.9953594, -9.2651266)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.9953594, -9.2651266), (22.1038238, -8.8353792)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.1038238, -8.8353792), (23.2508675, -12.808209)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.2508675, -12.808209), (23.2508675, -12.808209)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0835562, 19.1449491), (-10.3754744, 21.6233153)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.3754744, 21.6233153), (-8.5927491, 25.2813799)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5927491, 25.2813799), (-5.6423783, 24.892999)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.6423783, 24.892999), (-3.9188387, 22.496961)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.9188387, 22.496961), (-7.0835562, 19.1449491)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0835562, 19.1449491), (-7.0835562, 19.1449491)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0407747, -23.1129003), (-10.7600555, -24.6100355)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.7600555, -24.6100355), (-12.7338926, -22.1827731)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.7338926, -22.1827731), (-12.3938433, -19.4434162)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.3938433, -19.4434162), (-7.7613103, -19.0644658)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.7613103, -19.0644658), (-7.0407747, -23.1129003)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -7.0407747, -23.1129003), (-7.0407747, -23.1129003)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.9729145, 12.3475164), (24.6854079, 10.9837626)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.6854079, 10.9837626), (24.4384525, 7.7122598)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.4384525, 7.7122598), (22.4755544, 6.0577843)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.4755544, 6.0577843), (18.7472914, 8.8979191)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    18.7472914, 8.8979191), (20.9729145, 12.3475164)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.9729145, 12.3475164), (20.9729145, 12.3475164)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.9695134, 5.1300694), (-25.7871947, 8.588179)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.7871947, 8.588179), (-23.2433723, 10.8941675)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.2433723, 10.8941675), (-20.8747853, 10.7839959)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.8747853, 10.7839959), (-19.9957993, 6.1400888)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.9957993, 6.1400888), (-23.9695134, 5.1300694)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.9695134, 5.1300694), (-23.9695134, 5.1300694)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.2146962, -22.2437519), (10.6889529, -18.1696149)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.6889529, -18.1696149), (14.2842597, -20.1328414)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.2842597, -20.1328414), (13.3245623, -23.8762495)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    13.3245623, -23.8762495), (9.7382423, -23.7911919)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.7382423, -23.7911919), (8.2146962, -22.2437519)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.2146962, -22.2437519), (8.2146962, -22.2437519)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.3096804, 26.7743628), (8.9578452, 24.1284878)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.9578452, 24.1284878), (9.018906, 22.1619104)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.018906, 22.1619104), (4.4149636, 20.7776391)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    4.4149636, 20.7776391), (3.117486, 24.660783)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.117486, 24.660783), (6.3096804, 26.7743628)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.3096804, 26.7743628), (6.3096804, 26.7743628)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.1050166, -16.1665789), (-25.9383807, -15.1321685)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.9383807, -15.1321685), (-21.7992755, -10.3691166)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.7992755, -10.3691166), (-17.4343904, -12.4292665)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.4343904, -12.4292665), (-17.4227059, -12.4580291)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.4227059, -12.4580291), (-19.1050166, -16.1665789)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.1050166, -16.1665789), (-19.1050166, -16.1665789)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.1752862, -1.0185299), (29.5934638, -6.4221573)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    29.5934638, -6.4221573), (23.2892839, -7.1121924)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.2892839, -7.1121924), (21.4448656, -2.7086702)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.4448656, -2.7086702), (21.501783, -2.557686)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.501783, -2.557686), (25.1752862, -1.0185299)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.1752862, -1.0185299), (25.1752862, -1.0185299)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.3175684, 16.5529522), (-17.9755617, 17.8932867)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9755617, 17.8932867), (-17.6243034, 24.9346448)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.6243034, 24.9346448), (-12.5003553, 21.1417429)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.5003553, 21.1417429), (-14.0612558, 16.681201)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.0612558, 16.681201), (-14.3175684, 16.5529522)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -14.3175684, 16.5529522), (-14.3175684, 16.5529522)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.8845078, -30.5401328), (-5.0789307, -24.2426491)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.0789307, -24.2426491), (-0.972704, -21.9951028)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.972704, -21.9951028), (-0.581672, -22.1085649)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -0.581672, -22.1085649), (1.1501556, -25.5031648)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.1501556, -25.5031648), (-3.8845078, -30.5401328)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.8845078, -30.5401328), (-3.8845078, -30.5401328)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.7578213, 15.6575121), (15.4878252, 16.1058317)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.4878252, 16.1058317), (16.5033902, 19.6926855)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.5033902, 19.6926855), (23.6890381, 20.0538557)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.6890381, 20.0538557), (20.2727006, 14.5876645)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.2727006, 14.5876645), (15.7578213, 15.6575121)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.7578213, 15.6575121), (15.7578213, 15.6575121)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.3934121, -0.8507828), (-22.5222998, -1.47303)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.5222998, -1.47303), (-25.3657978, -3.2061226)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.3657978, -3.2061226), (-31.5165656, 1.1607085)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -31.5165656, 1.1607085), (-25.0091422, 2.9355454)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.0091422, 2.9355454), (-22.3934121, -0.8507828)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.3934121, -0.8507828), (-22.3934121, -0.8507828)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.1985409, -14.6665245), (17.8037675, -14.2342115)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.8037675, -14.2342115), (20.8823935, -14.8582597)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.8823935, -14.8582597), (22.748083, -22.3876792)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.748083, -22.3876792), (16.6104174, -19.1956388)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.6104174, -19.1956388), (17.1985409, -14.6665245)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.1985409, -14.6665245), (17.1985409, -14.6665245)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.3112012, 25.1312243), (-1.7121181, 32.2786943)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.7121181, 32.2786943), (0.6996861, 25.5774235)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    0.6996861, 25.5774235), (-2.7458533, 22.6285373)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.7458533, 22.6285373), (-3.5876616, 22.7351863)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.5876616, 22.7351863), (-5.3112012, 25.1312243)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.3112012, 25.1312243), (-5.3112012, 25.1312243)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.8007155, -19.3929092), (-13.1407648, -22.1322662)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.1407648, -22.1322662), (-20.7841802, -25.3285927)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.7841802, -25.3285927), (-17.9159882, -18.5482888)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9159882, -18.5482888), (-13.411634, -18.665412)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.411634, -18.665412), (-12.8007155, -19.3929092)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.8007155, -19.3929092), (-12.8007155, -19.3929092)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.6910848, 4.6955986), (22.7411033, 5.7427325)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.7411033, 5.7427325), (24.7040014, 7.397208)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.7040014, 7.397208), (32.9017334, 4.7619373)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    32.9017334, 4.7619373), (25.937797, 1.6099087)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.937797, 1.6099087), (22.6910848, 4.6955986)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.6910848, 4.6955986), (22.6910848, 4.6955986)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.0398922, 11.9994317), (-20.8555457, 11.1976293)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.8555457, 11.1976293), (-23.2241327, 11.3078009)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.2241327, 11.3078009), (-27.9513736, 18.9535395)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -27.9513736, 18.9535395), (-20.3814368, 16.4410982)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.3814368, 16.4410982), (-20.0398922, 11.9994317)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.0398922, 11.9994317), (-20.0398922, 11.9994317)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.9181691, -22.5357003), (9.4417152, -24.0831404)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.4417152, -24.0831404), (8.0213511, -33.4056884)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.0213511, -33.4056884), (3.9735616, -26.0823164)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.9735616, -26.0823164), (6.6822993, -22.5735541)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.6822993, -22.5735541), (7.9181691, -22.5357003)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.9181691, -22.5357003), (7.9181691, -22.5357003)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.3758206, 24.1414656), (16.8828875, 30.6682233)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.8828875, 30.6682233), (14.7801974, 22.0906818)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.7801974, 22.0906818), (10.438063, 21.304583)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    10.438063, 21.304583), (9.4368814, 22.1748882)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.4368814, 22.1748882), (9.3758206, 24.1414656)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.3758206, 24.1414656), (9.3758206, 24.1414656)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.255575, -14.8565258), (-36.5531122, -19.2236956)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.5531122, -19.2236956), (-36.5531122, -12.5492677)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.5531122, -12.5492677), (-25.844918, -6.4700496)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.844918, -6.4700496), (-22.270366, -8.6875925)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.270366, -8.6875925), (-22.1164698, -10.0934738)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -22.1164698, -10.0934738), (-26.255575, -14.8565258)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.255575, -14.8565258), (-26.255575, -14.8565258)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.5901017, -12.7102646), (22.443058, -8.7374348)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.443058, -8.7374348), (23.3352308, -7.5319645)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.3352308, -7.5319645), (29.6394107, -6.8419295)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    29.6394107, -6.8419295), (36.5491172, -9.2780987)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.5491172, -9.2780987), (36.5491172, -16.0480597)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.5491172, -16.0480597), (23.5901017, -12.7102646)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.5901017, -12.7102646), (23.5901017, -12.7102646)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.9099183, 25.4359495), (-10.6926436, 21.7778849)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.6926436, 21.7778849), (-12.2478938, 21.4828009)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -12.2478938, 21.4828009), (-17.371842, 25.2757028)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.371842, 25.2757028), (-23.3887408, 36.509513)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.3887408, 36.509513), (-15.7031154, 36.509513)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.7031154, 36.509513), (-8.9099183, 25.4359495)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.9099183, 25.4359495), (-8.9099183, 25.4359495)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.3034236, -30.6195872), (-5.8270525, -36.6262761)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.8270525, -36.6262761), (-13.2199536, -36.6262761)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.2199536, -36.6262761), (-10.628387, -24.9371349)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -10.628387, -24.9371349), (-6.9091063, -23.4399997)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -6.9091063, -23.4399997), (-5.4978465, -24.3221035)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.4978465, -24.3221035), (-4.3034236, -30.6195872)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -4.3034236, -30.6195872), (-4.3034236, -30.6195872)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.0523525, 19.8267863), (36.4507514, 27.9889686)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.4507514, 27.9889686), (36.4507514, 19.0138897)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.4507514, 19.0138897), (24.8069267, 11.3145685)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.8069267, 11.3145685), (21.0944333, 12.6783222)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.0944333, 12.6783222), (20.6360149, 14.3605952)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.6360149, 14.3605952), (24.0523525, 19.8267863)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.0523525, 19.8267863), (24.0523525, 19.8267863)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.0990119, 8.424279), (-24.2813306, 4.9661694)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -24.2813306, 4.9661694), (-25.1224162, 3.3508634)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.1224162, 3.3508634), (-31.6298395, 1.5760265)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -31.6298395, 1.5760265), (-36.6902956, 2.1460853)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.6902956, 2.1460853), (-36.6902956, 10.39605)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.6902956, 10.39605), (-26.0990119, 8.424279)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.0990119, 8.424279), (-26.0990119, 8.424279)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    13.6656826, -23.9637025), (14.62538, -20.2202944)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    14.62538, -20.2202944), (16.4108419, -19.5793831)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.4108419, -19.5793831), (22.5485076, -22.7714235)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.5485076, -22.7714235), (34.8087117, -36.377009)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    34.8087117, -36.377009), (22.5007501, -36.377009)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.5007501, -36.377009), (13.6656826, -23.9637025)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    13.6656826, -23.9637025), (13.6656826, -23.9637025)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.1153153, 27.0679175), (2.9231209, 24.9543377)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    2.9231209, 24.9543377), (1.1085978, 25.7245918)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.1085978, 25.7245918), (-1.3032064, 32.4258626)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.3032064, 32.4258626), (-1.3381018, 36.740337)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.3381018, 36.740337), (7.5717095, 36.740337)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.5717095, 36.740337), (6.1153153, 27.0679175)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.1153153, 27.0679175), (6.1153153, 27.0679175)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.9910674, -15.4802196), (-19.1577033, -16.51463)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -19.1577033, -16.51463), (-18.3181248, -18.3781777)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.3181248, -18.3781777), (-21.1863168, -25.1584816)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -21.1863168, -25.1584816), (-30.7141496, -36.0785586)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -30.7141496, -36.0785586), (-36.2886046, -36.0785586)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.2886046, -36.0785586), (-36.2886046, -19.8473894)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.2886046, -19.8473894), (-25.9910674, -15.4802196)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.9910674, -15.4802196), (-25.9910674, -15.4802196)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    29.8659659, -6.1993509), (25.4477883, -0.7957235)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.4477883, -0.7957235), (26.1186879, 1.2102573)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    26.1186879, 1.2102573), (33.0826242, 4.3622859)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    33.0826242, 4.3622859), (36.7756724, 4.8365122)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.7756724, 4.8365122), (36.7756724, -8.6355202)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.7756724, -8.6355202), (29.8659659, -6.1993509)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    29.8659659, -6.1993509), (29.8659659, -6.1993509)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9758681, 24.9521826), (-18.3271263, 17.9108245)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -18.3271263, 17.9108245), (-20.2426073, 16.8593886)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.2426073, 16.8593886), (-27.8125441, 19.3718299)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -27.8125441, 19.3718299), (-36.2204094, 25.1008767)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.2204094, 25.1008767), (-36.2204094, 36.1859929)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.2204094, 36.1859929), (-23.9927669, 36.1859929)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.9927669, 36.1859929), (-17.9758681, 24.9521826)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -17.9758681, 24.9521826), (-17.9758681, 24.9521826)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.6355229, -30.7890037), (1.3991404, -25.7520357)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    1.3991404, -25.7520357), (3.5860465, -26.2965045)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    3.5860465, -26.2965045), (7.633836, -33.6198765)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.633836, -33.6198765), (8.4334499, -36.7956926)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.4334499, -36.7956926), (-5.1591518, -36.7956926)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.1591518, -36.7956926), (-3.6355229, -30.7890037)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -3.6355229, -30.7890037), (-3.6355229, -30.7890037)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.6713629, 20.4055114), (16.485715, 20.0443413)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.485715, 20.0443413), (15.2122147, 21.9847775)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    15.2122147, 21.9847775), (17.3149048, 30.562319)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    17.3149048, 30.562319), (20.3266313, 36.3538559)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    20.3266313, 36.3538559), (36.0697619, 36.3538559)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.0697619, 36.3538559), (36.0697619, 28.5676937)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.0697619, 28.5676937), (23.6713629, 20.4055114)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.6713629, 20.4055114), (23.6713629, 20.4055114)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -31.7068111, 0.8927438), (-25.5560433, -3.4740873)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -25.5560433, -3.4740873), (-26.059073, -6.0928279)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.059073, -6.0928279), (-36.7672672, -12.1720459)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.7672672, -12.1720459), (-36.7672672, 1.4628026)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.7672672, 1.4628026), (-31.7068111, 0.8927438)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -31.7068111, 0.8927438), (-31.7068111, 0.8927438)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.0601828, -22.3103451), (21.1944932, -14.7809255)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    21.1944932, -14.7809255), (23.4823249, -13.128709)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.4823249, -13.128709), (36.4413404, -16.4665042)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.4413404, -16.4665042), (36.4413404, -35.9159306)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.4413404, -35.9159306), (35.3203868, -35.9159306)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    35.3203868, -35.9159306), (23.0601828, -22.3103451)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    23.0601828, -22.3103451), (23.0601828, -22.3103451)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.9932975, 32.4202812), (-5.5923806, 25.2728112)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -5.5923806, 25.2728112), (-8.5427514, 25.6611921)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -8.5427514, 25.6611921), (-15.3359484, 36.7347556)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -15.3359484, 36.7347556), (-2.0281929, 36.7347556)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -2.0281929, 36.7347556), (-1.9932975, 32.4202812)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -1.9932975, 32.4202812), (-1.9932975, 32.4202812)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.6651686, -25.6131864), (-13.0217533, -22.4168599)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.0217533, -22.4168599), (-11.0479162, -24.8441223)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -11.0479162, -24.8441223), (-13.6394828, -36.5332634)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -13.6394828, -36.5332634), (-30.1930015, -36.5332634)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -30.1930015, -36.5332634), (-20.6651686, -25.6131864)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -20.6651686, -25.6131864), (-20.6651686, -25.6131864)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    32.9943203, 5.0499545), (24.7965884, 7.6852253)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    24.7965884, 7.6852253), (25.0435439, 10.9567281)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    25.0435439, 10.9567281), (36.6873685, 18.6560493)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.6873685, 18.6560493), (36.6873685, 5.5241808)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    36.6873685, 5.5241808), (32.9943203, 5.0499545)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    32.9943203, 5.0499545), (32.9943203, 5.0499545)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -28.2039888, 18.7973515), (-23.4767479, 11.1516129)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -23.4767479, 11.1516129), (-26.0205703, 8.8456244)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -26.0205703, 8.8456244), (-36.6118541, 10.8173954)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.6118541, 10.8173954), (-36.6118541, 24.5263983)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -36.6118541, 24.5263983), (-28.2039888, 18.7973515)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    -28.2039888, 18.7973515), (-28.2039888, 18.7973515)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.3099113, -33.4496528), (9.7302754, -24.1271048)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.7302754, -24.1271048), (13.3165953, -24.2121624)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    13.3165953, -24.2121624), (22.1516629, -36.6254689)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    22.1516629, -36.6254689), (9.1095252, -36.6254689)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.1095252, -36.6254689), (8.3099113, -33.4496528)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    8.3099113, -33.4496528), (8.3099113, -33.4496528)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.6944415, 30.8849735), (9.1873746, 24.3582159)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    9.1873746, 24.3582159), (6.5392099, 27.0040909)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    6.5392099, 27.0040909), (7.995604, 36.6765104)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    7.995604, 36.6765104), (19.7061681, 36.6765104)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    19.7061681, 36.6765104), (16.6944415, 30.8849735)))
+mdb.models['musclefiber'].sketches['sketch_myofibrils'].Spline(points=((
+    16.6944415, 30.8849735), (16.6944415, 30.8849735)))
+mdb.models['musclefiber'].Part(dimensionality=THREE_D, name='myofibrils', type=
+    DEFORMABLE_BODY)
+mdb.models['musclefiber'].parts['myofibrils'].BaseSolidExtrude(depth=60.0, 
+    sketch=mdb.models['musclefiber'].sketches['sketch_myofibrils'])
+mdb.models['musclefiber'].rootAssembly.Instance(dependent=ON, name='myofibrils'
+    , part=mdb.models['musclefiber'].parts['myofibrils'])
+mdb.models['musclefiber'].ConstrainedSketch(name=
+    'sketch_sarcoplasmic_reticulum', sheetSize=43.8605745516403)
+mdb.models['musclefiber'].sketches['sketch_sarcoplasmic_reticulum'].CircleByCenterPerimeter(
+    center=(0, 0), point1=(58.4807660688538, 0))
+mdb.models['musclefiber'].sketches['sketch_sarcoplasmic_reticulum'].retrieveSketch(
+    sketch=mdb.models['musclefiber'].sketches['sketch_myofibrils'])
+mdb.models['musclefiber'].Part(dimensionality=THREE_D, name=
+    'sarcoplasmic_reticulum', type=DEFORMABLE_BODY)
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].BaseSolidExtrude(
+    depth=60.0, sketch=
+    mdb.models['musclefiber'].sketches['sketch_sarcoplasmic_reticulum'])
+mdb.models['musclefiber'].rootAssembly.Instance(dependent=ON, name=
+    'sarcoplasmic_reticulum', part=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'])
+mdb.models['musclefiber'].parts['myofibrils'].DatumPlaneByPrincipalPlane(
+    offset=60.0, principalPlane=XYPLANE)
+mdb.models['musclefiber'].parts['myofibrils'].DatumPointByCoordinate(coords=(0, 
+    0, 60.0))
+mdb.models['musclefiber'].parts['myofibrils'].DatumPointByCoordinate(coords=(1, 
+    1, 60.0))
+mdb.models['musclefiber'].parts['myofibrils'].DatumAxisByTwoPoint(point1=
+    mdb.models['musclefiber'].parts['myofibrils'].datums[3], point2=
+    mdb.models['musclefiber'].parts['myofibrils'].datums[4])
+mdb.models['musclefiber'].ConstrainedSketch(gridSpacing=0.584807660688538, 
+    name='__profile__', sheetSize=58.4807660688538, transform=
+    mdb.models['musclefiber'].parts['myofibrils'].MakeSketchTransform(
+    sketchPlane=mdb.models['musclefiber'].parts['myofibrils'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['musclefiber'].parts['myofibrils'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 60.0)))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(28.7587944129425, 0.0))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(58.4807660688538, 0.0))
+mdb.models['musclefiber'].parts['myofibrils'].CutExtrude(flipExtrudeDirection=
+    OFF, sketch=mdb.models['musclefiber'].sketches['__profile__'], 
+    sketchOrientation=RIGHT, sketchPlane=
+    mdb.models['musclefiber'].parts['myofibrils'].datums[2], sketchPlaneSide=
+    SIDE1, sketchUpEdge=
+    mdb.models['musclefiber'].parts['myofibrils'].datums[5])
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].DatumPlaneByPrincipalPlane(
+    offset=60.0, principalPlane=XYPLANE)
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].DatumPointByCoordinate(
+    coords=(0, 0, 60.0))
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].DatumPointByCoordinate(
+    coords=(1, 1, 60.0))
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].DatumAxisByTwoPoint(
+    point1=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[3], 
+    point2=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[4])
+mdb.models['musclefiber'].ConstrainedSketch(gridSpacing=0.584807660688538, 
+    name='__profile__', sheetSize=58.4807660688538, transform=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].MakeSketchTransform(
+    sketchPlane=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 60.0)))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(28.7587944129425, 0.0))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(58.4807660688538, 0.0))
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].CutExtrude(
+    flipExtrudeDirection=OFF, sketch=
+    mdb.models['musclefiber'].sketches['__profile__'], sketchOrientation=RIGHT, 
+    sketchPlane=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[2], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[5])
+mdb.models['musclefiber'].ConstrainedSketch(gridSpacing=0.584807660688538, 
+    name='__profile__', sheetSize=58.4807660688538, transform=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].MakeSketchTransform(
+    sketchPlane=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[2], 
+    sketchPlaneSide=SIDE1, 
+    sketchUpEdge=mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[5], 
+    sketchOrientation=RIGHT, origin=(0.0, 0.0, 60.0)))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(28.7587944129425, 0.0))
+mdb.models['musclefiber'].sketches['__profile__'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(29.2403830344269, 0.0))
+mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].SolidExtrude(depth=
+    60.0, flipExtrudeDirection=ON, sketch=
+    mdb.models['musclefiber'].sketches['__profile__'], sketchOrientation=RIGHT, 
+    sketchPlane=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[2], 
+    sketchPlaneSide=SIDE1, sketchUpEdge=
+    mdb.models['musclefiber'].parts['sarcoplasmic_reticulum'].datums[5])
+mdb.models['musclefiber'].ConstrainedSketch(name='sketch_sarcolemma', 
+    sheetSize=58.4807660688538)
+mdb.models['musclefiber'].sketches['sketch_sarcolemma'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(29.2403830344269, 0.0))
+mdb.models['musclefiber'].sketches['sketch_sarcolemma'].CircleByCenterPerimeter(
+    center=(0.0, 0.0), point1=(30.0, 0.0))
+mdb.models['musclefiber'].Part(dimensionality=THREE_D, name='sarcolemma', type=
+    DEFORMABLE_BODY)
+mdb.models['musclefiber'].parts['sarcolemma'].BaseSolidExtrude(depth=60.0, 
+    sketch=mdb.models['musclefiber'].sketches['sketch_sarcolemma'])
+mdb.models['musclefiber'].rootAssembly.Instance(dependent=ON, name='sarcolemma'
+    , part=mdb.models['musclefiber'].parts['sarcolemma'])
+mdb.models['musclefiber'].rootAssembly.InstanceFromBooleanMerge(domain=GEOMETRY
+    , instances=
+    [mdb.models['musclefiber'].rootAssembly.instances['myofibrils'], 
+    mdb.models['musclefiber'].rootAssembly.instances['sarcoplasmic_reticulum'], 
+    mdb.models['musclefiber'].rootAssembly.instances['sarcolemma']], 
+    keepIntersections=ON, name='musclefiber', originalInstances=SUPPRESS)
+mdb.models['musclefiber'].rootAssembly.features.changeKey(fromName=
+    'musclefiber-1', toName='musclefiber')
+# Save by jensl on 2022_08_03-14.47.45; build 6.14-1 2014_06_05-00.11.02 134264
