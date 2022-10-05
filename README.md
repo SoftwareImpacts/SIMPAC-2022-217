@@ -7,3 +7,6 @@ each hierarchical level. A set of representative output-files (.jnl) for each le
 Abaqus. 
 
 For more information, the reader is referred to the article "Python codes to generate skeletal muscle models on each hierarchical level".
+
+License:
+This project is licensed under the terms of the MIT license.
